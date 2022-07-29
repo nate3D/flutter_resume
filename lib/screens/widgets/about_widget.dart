@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/data/data.dart';
 
@@ -6,24 +7,30 @@ class AboutWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          "Experience",
-          style: Theme.of(context).textTheme.headline4,
-        ),
-        const SizedBox(
-          height: 10,
-        ),
-        Text(aboutWorkExperience),
-        const Divider(),
-        Text("About Me", style: Theme.of(context).textTheme.headline4),
-        const SizedBox(
-          height: 10,
-        ),
-        Text(aboutMeSummary),
-      ],
+    return CarouselSlider(
+      options: CarouselOptions(
+        scrollPhysics: const ClampingScrollPhysics(),
+        aspectRatio: 2.0,
+        enlargeCenterPage: false,
+        autoPlay: true,
+        autoPlayInterval: const Duration(seconds: 3),
+        autoPlayAnimationDuration: const Duration(milliseconds: 800),
+        autoPlayCurve: Curves.fastOutSlowIn,
+        pauseAutoPlayOnTouch: true,
+        scrollDirection: Axis.horizontal,
+        viewportFraction: 1.0,
+      ),
+      items: techList.map((tech) {
+        return ClipRRect(
+          clipBehavior: Clip.hardEdge,
+          borderRadius: BorderRadius.circular(10),
+          child: Image.asset(
+            isAntiAlias: true,
+            tech.imagePath,
+            fit: BoxFit.cover,
+          ),
+        );
+      }).toList(),
     );
   }
 }

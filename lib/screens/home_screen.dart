@@ -92,9 +92,24 @@ class HomeScreen extends StatelessWidget {
                         ? Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              const Flexible(flex: 3, child: AboutWidget()),
+                              Column(
+                                children: [
+                                  Text("Technologies I Use",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .headline2),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: SizedBox(
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.2,
+                                        child: const AboutWidget()),
+                                  ),
+                                ],
+                              ),
                               Flexible(
-                                flex: 1,
+                                flex: 0,
                                 child: Column(
                                   children: const [QuickInfoWidget()],
                                 ),
@@ -103,7 +118,22 @@ class HomeScreen extends StatelessWidget {
                           )
                         : Column(
                             children: [
-                              const AboutWidget(),
+                              Column(
+                                children: [
+                                  Text("Technologies I Use",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .headline2),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: SizedBox(
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.2,
+                                        child: const AboutWidget()),
+                                  ),
+                                ],
+                              ),
                               Column(
                                 children: const [
                                   QuickInfoWidget(),

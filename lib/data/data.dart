@@ -1,4 +1,5 @@
 import 'package:portfolio/models/employment_model.dart';
+import 'package:portfolio/models/technology_model.dart';
 
 String imagePath = "images/Nate_ProfilePic.png";
 
@@ -31,7 +32,23 @@ String website = "nate3d.com";
 String github = "github.com/nate3D";
 String email = contactEmail;
 
-List<Employment> projectList = [
+List<Technology> techList = [
+  Technology(imagePath: "images/DOT-NET-6-1.jpg", name: "DotNet"),
+  Technology(imagePath: "images/java-logo-vert-blk.png", name: "Java"),
+  Technology(imagePath: "images/python.png", name: "Python"),
+  Technology(imagePath: "images/c-sharp.png", name: "C#"),
+  Technology(imagePath: "images/sql-server.png", name: "Sql Server"),
+  Technology(imagePath: "images/godot.png", name: "Godot"),
+  Technology(imagePath: "images/dart.png", name: "Dart"),
+  Technology(imagePath: "images/flutter.png", name: "Flutter"),
+  Technology(imagePath: "images/angular.png", name: "Angular"),
+  Technology(imagePath: "images/docker.png", name: "Docker"),
+  Technology(imagePath: "images/mysql.png", name: "MySql"),
+  Technology(imagePath: "images/cosmosdb.png", name: "CosmosDB"),
+  Technology(imagePath: "images/dynamodb.png", name: "DynamoDB"),
+];
+
+List<Employment> employmentHistoryList = [
   Employment(
       companyName: "TheSeam",
       positionTitle: "Senior Solutions Architect",

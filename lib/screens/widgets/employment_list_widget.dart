@@ -11,10 +11,10 @@ class EmploymentListWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       shrinkWrap: true,
-      itemCount: projectList.length,
+      itemCount: employmentHistoryList.length,
       itemBuilder: (BuildContext context, int index) {
         return EmploymentWidget(
-          employmentData: projectList[index],
+          employmentData: employmentHistoryList[index],
         );
       },
     );
