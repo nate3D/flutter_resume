@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/data/data.dart';
 
 class AboutWidget extends StatelessWidget {
@@ -12,14 +11,14 @@ class AboutWidget extends StatelessWidget {
       children: [
         Text(
           "Experience",
-          style: kSectionTitleText,
+          style: Theme.of(context).textTheme.headline4,
         ),
         const SizedBox(
           height: 10,
         ),
         Text(aboutWorkExperience),
         const Divider(),
-        Text("About Me", style: kSectionTitleText),
+        Text("About Me", style: Theme.of(context).textTheme.headline4),
         const SizedBox(
           height: 10,
         ),

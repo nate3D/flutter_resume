@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
 import 'package:portfolio/models/employment_model.dart';
-
-//Update with colors of your choice for dp background gradient
-Color kGradient1 = Colors.teal;
-Color kGradient2 = Colors.pinkAccent;
 
 String imagePath = "images/Nate_ProfilePic.png";
 
@@ -25,12 +20,13 @@ I've worked as a linux systems administrator, a full-stack java developer, a ful
 I use this experience to take business problems and turn them into a product that is easy to use, easy to understand, and easy to maintain.
 ''';
 
-String aboutMeSummary = '''
+String aboutMeSummary = ''' 
 ''';
 
 String location = "Memphis, TN";
 String locationUrl = "goo.gl/maps/zCGGRwNXxpsZZBVg8";
-String linkedIn = "www.linkedin.com/in/nate-brandeburg/";
+String phoneNumber = "901-310-5878";
+String linkedIn = "linkedin.com/in/nate-brandeburg";
 String website = "nate3d.com";
 String github = "github.com/nate3D";
 String email = contactEmail;
@@ -38,7 +34,7 @@ String email = contactEmail;
 List<Employment> projectList = [
   Employment(
       companyName: "TheSeam",
-      positionTitle: "Digital Innovation Engineer",
+      positionTitle: "Senior Solutions Architect",
       startDate: "May 2021",
       endDate: "Present",
       achievements: [

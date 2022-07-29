@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/data/data.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class QuickInfoWidget extends StatelessWidget {
   const QuickInfoWidget({Key? key}) : super(key: key);
@@ -9,29 +8,23 @@ class QuickInfoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.white,
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Text(
             "Location",
-            style: kSubTitleText,
+            style: Theme.of(context).textTheme.headline4,
           ),
           const SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: () async {
-              final Uri url = Uri.parse("https://$locationUrl");
-              await launchUrl(url);
-            },
+            onTap: () => launchLocation(),
             child: Wrap(
               children: [
+                Text(location),
                 const SizedBox(
                   width: 5,
-                ),
-                Text(
-                  location,
                 ),
                 const Icon(
                   Icons.location_history,
@@ -45,16 +38,13 @@ class QuickInfoWidget extends StatelessWidget {
           ),
           Text(
             "LinkedIn",
-            style: kSubTitleText,
+            style: Theme.of(context).textTheme.headline4,
           ),
           const SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: () async {
-              final Uri url = Uri.parse("https://$linkedIn");
-              await launchUrl(url);
-            },
+            onTap: () => launchLinkedIn(),
             child: Wrap(
               children: [
                 Text(linkedIn),
@@ -72,45 +62,14 @@ class QuickInfoWidget extends StatelessWidget {
             height: 10,
           ),
           Text(
-            "Website",
-            style: kSubTitleText,
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          InkWell(
-            onTap: () async {
-              final Uri url = Uri.parse("https://$website");
-              await launchUrl(url);
-            },
-            child: Wrap(
-              children: [
-                Text(website),
-                const SizedBox(
-                  width: 5,
-                ),
-                const Icon(
-                  Icons.launch,
-                  size: 16,
-                )
-              ],
-            ),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Text(
             "Github",
-            style: kSubTitleText,
+            style: Theme.of(context).textTheme.headline4,
           ),
           const SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: () async {
-              final Uri url = Uri.parse("https://$github");
-              await launchUrl(url);
-            },
+            onTap: () => launchGitHub(),
             child: Wrap(
               children: [
                 Text(github),
@@ -129,20 +88,13 @@ class QuickInfoWidget extends StatelessWidget {
           ),
           Text(
             "Email",
-            style: kSubTitleText,
+            style: Theme.of(context).textTheme.headline4,
           ),
           const SizedBox(
             height: 10,
           ),
           InkWell(
-            onTap: () async {
-              //Call to launch email
-              final Uri emailLaunchUri = Uri(
-                scheme: 'mailto',
-                path: contactEmail,
-              );
-              await launchUrl(emailLaunchUri);
-            },
+            onTap: () => launchEmail(),
             child: Wrap(
               children: [
                 Text(email),
