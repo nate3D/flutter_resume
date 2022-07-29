@@ -15,19 +15,23 @@ class HomeScreen extends StatelessWidget {
     var screenSize = MediaQuery.of(context).size;
     return Scaffold(
       floatingActionButton: ExpandableFab(
+        tooltip: "Contact Me",
         distance: 112.0,
         children: [
           ActionButton(
             onPressed: () => launchPhone(),
             icon: const Icon(Icons.phone),
+            tooltip: "Call",
           ),
           ActionButton(
             onPressed: () => launchEmail(),
             icon: const Icon(Icons.email),
+            tooltip: "Email",
           ),
           ActionButton(
             onPressed: () => launchLinkedIn(),
             icon: const Icon(Icons.web),
+            tooltip: "LinkedIn",
           ),
         ],
       ),

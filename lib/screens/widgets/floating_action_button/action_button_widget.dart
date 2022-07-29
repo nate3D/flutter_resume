@@ -6,10 +6,12 @@ class ActionButton extends StatelessWidget {
     super.key,
     this.onPressed,
     required this.icon,
+    required this.tooltip,
   });
 
   final VoidCallback? onPressed;
   final Widget icon;
+  final String tooltip;
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +25,7 @@ class ActionButton extends StatelessWidget {
         onPressed: onPressed,
         icon: icon,
         color: theme.colorScheme.onSecondary,
+        tooltip: tooltip,
       ),
     );
   }
