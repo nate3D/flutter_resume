@@ -33,19 +33,19 @@ String github = "github.com/nate3D";
 String email = contactEmail;
 
 List<Technology> techList = [
-  Technology(imagePath: "assets/images/DOT-NET-6-1.jpg", name: "DotNet"),
-  Technology(imagePath: "assets/images/java-logo-vert-blk.png", name: "Java"),
-  Technology(imagePath: "assets/images/python.png", name: "Python"),
-  Technology(imagePath: "assets/images/c-sharp.png", name: "C#"),
-  Technology(imagePath: "assets/images/sql-server.png", name: "Sql Server"),
-  Technology(imagePath: "assets/images/godot.png", name: "Godot"),
+  Technology(imagePath: "assets/images/DOT-NET-6-1.jpg", name: ""),
+  Technology(imagePath: "assets/images/java-logo-vert-blk.png", name: ""),
+  Technology(imagePath: "assets/images/python.png", name: ""),
+  Technology(imagePath: "assets/images/c-sharp.png", name: ""),
+  Technology(imagePath: "assets/images/sql-server.png", name: ""),
+  Technology(imagePath: "assets/images/godot.png", name: ""),
   Technology(imagePath: "assets/images/dart.png", name: "Dart"),
   Technology(imagePath: "assets/images/flutter.png", name: "Flutter"),
   Technology(imagePath: "assets/images/angular.png", name: "Angular"),
-  Technology(imagePath: "assets/images/docker.png", name: "Docker"),
-  Technology(imagePath: "assets/images/mysql.png", name: "MySql"),
-  Technology(imagePath: "assets/images/cosmosdb.png", name: "CosmosDB"),
-  Technology(imagePath: "assets/images/dynamodb.png", name: "DynamoDB"),
+  Technology(imagePath: "assets/images/docker.png", name: ""),
+  Technology(imagePath: "assets/images/mysql.png", name: ""),
+  Technology(imagePath: "assets/images/cosmosdb.png", name: ""),
+  Technology(imagePath: "assets/images/dynamodb.png", name: ""),
 ];
 
 List<Employment> employmentHistoryList = [

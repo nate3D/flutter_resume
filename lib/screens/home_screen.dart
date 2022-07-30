@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/data/data.dart';
-import 'package:portfolio/screens/widgets/about_widget.dart';
 import 'package:portfolio/screens/widgets/employment_list_widget.dart';
 import 'package:portfolio/screens/widgets/floating_action_button/action_button_widget.dart';
 import 'package:portfolio/screens/widgets/floating_action_button/expandable_fab_widget.dart';
 import 'package:portfolio/screens/widgets/quick_info_widget.dart';
+import 'package:portfolio/screens/widgets/technology_carousel_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -32,6 +32,11 @@ class HomeScreen extends StatelessWidget {
             onPressed: () => launchLinkedIn(),
             icon: const Icon(Icons.web),
             tooltip: "LinkedIn",
+          ),
+          ActionButton(
+            onPressed: () => launchResume(),
+            icon: const Icon(Icons.contact_page),
+            tooltip: "Resume",
           ),
         ],
       ),
@@ -118,7 +123,8 @@ class HomeScreen extends StatelessWidget {
                                         width:
                                             MediaQuery.of(context).size.width *
                                                 0.2,
-                                        child: const AboutWidget()),
+                                        child:
+                                            const TechnologyCarouselWidget()),
                                   ),
                                 ],
                               ),
@@ -143,7 +149,8 @@ class HomeScreen extends StatelessWidget {
                                     child: SizedBox(
                                         width:
                                             MediaQuery.of(context).size.width,
-                                        child: const AboutWidget()),
+                                        child:
+                                            const TechnologyCarouselWidget()),
                                   ),
                                 ],
                               ),

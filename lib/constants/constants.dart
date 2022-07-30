@@ -89,6 +89,11 @@ Future<void> launchLocation() async {
   await launchUrl(url);
 }
 
+Future<void> launchResume() async {
+  final Uri url = Uri.parse("https://$resumeLink");
+  await launchUrl(url);
+}
+
 Future<void> launchEmail() async {
   final Uri emailLaunchUri = Uri(
     scheme: 'mailto',
