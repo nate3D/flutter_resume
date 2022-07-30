@@ -49,8 +49,10 @@ class _EmploymentWidgetState extends State<EmploymentWidget> {
                     const SizedBox(
                       width: 10,
                     ),
-                    Text(
-                      widget.employmentData.positionTitle,
+                    Expanded(
+                      child: Text(
+                        widget.employmentData.positionTitle,
+                      ),
                     ),
                     const SizedBox(
                       width: 10,
@@ -80,8 +82,10 @@ class _EmploymentWidgetState extends State<EmploymentWidget> {
                         const SizedBox(
                           width: 10,
                         ),
-                        Text(
-                          widget.employmentData.positionTitle,
+                        Expanded(
+                          child: Text(
+                            widget.employmentData.positionTitle,
+                          ),
                         ),
                       ],
                     ),
@@ -105,6 +109,7 @@ class _EmploymentWidgetState extends State<EmploymentWidget> {
         const Divider(),
         SingleChildScrollView(
           child: ListView.builder(
+            physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             itemCount: widget.employmentData.achievements.length,
             itemBuilder: (BuildContext context, int index) {

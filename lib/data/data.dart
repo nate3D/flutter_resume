@@ -1,7 +1,7 @@
 import 'package:portfolio/models/employment_model.dart';
 import 'package:portfolio/models/technology_model.dart';
 
-String imagePath = "images/Nate_ProfilePic.png";
+String imagePath = "assets/images/Nate_ProfilePic.png";
 
 //String data to modify
 String name = "Nate Brandeburg";
@@ -33,19 +33,19 @@ String github = "github.com/nate3D";
 String email = contactEmail;
 
 List<Technology> techList = [
-  Technology(imagePath: "images/DOT-NET-6-1.jpg", name: "DotNet"),
-  Technology(imagePath: "images/java-logo-vert-blk.png", name: "Java"),
-  Technology(imagePath: "images/python.png", name: "Python"),
-  Technology(imagePath: "images/c-sharp.png", name: "C#"),
-  Technology(imagePath: "images/sql-server.png", name: "Sql Server"),
-  Technology(imagePath: "images/godot.png", name: "Godot"),
-  Technology(imagePath: "images/dart.png", name: "Dart"),
-  Technology(imagePath: "images/flutter.png", name: "Flutter"),
-  Technology(imagePath: "images/angular.png", name: "Angular"),
-  Technology(imagePath: "images/docker.png", name: "Docker"),
-  Technology(imagePath: "images/mysql.png", name: "MySql"),
-  Technology(imagePath: "images/cosmosdb.png", name: "CosmosDB"),
-  Technology(imagePath: "images/dynamodb.png", name: "DynamoDB"),
+  Technology(imagePath: "assets/images/DOT-NET-6-1.jpg", name: "DotNet"),
+  Technology(imagePath: "assets/images/java-logo-vert-blk.png", name: "Java"),
+  Technology(imagePath: "assets/images/python.png", name: "Python"),
+  Technology(imagePath: "assets/images/c-sharp.png", name: "C#"),
+  Technology(imagePath: "assets/images/sql-server.png", name: "Sql Server"),
+  Technology(imagePath: "assets/images/godot.png", name: "Godot"),
+  Technology(imagePath: "assets/images/dart.png", name: "Dart"),
+  Technology(imagePath: "assets/images/flutter.png", name: "Flutter"),
+  Technology(imagePath: "assets/images/angular.png", name: "Angular"),
+  Technology(imagePath: "assets/images/docker.png", name: "Docker"),
+  Technology(imagePath: "assets/images/mysql.png", name: "MySql"),
+  Technology(imagePath: "assets/images/cosmosdb.png", name: "CosmosDB"),
+  Technology(imagePath: "assets/images/dynamodb.png", name: "DynamoDB"),
 ];
 
 List<Employment> employmentHistoryList = [

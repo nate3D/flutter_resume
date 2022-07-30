@@ -69,10 +69,24 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                 ]),
-            title: Text(
-              name,
-              style: Theme.of(context).textTheme.headline1,
-            ),
+            title: screenSize.width > 1200
+                ? Text(
+                    name,
+                    style: Theme.of(context).textTheme.headline1,
+                  )
+                : Text(
+                    name,
+                    style: Theme.of(context)
+                        .textTheme
+                        .headline4
+                        ?.copyWith(shadows: [
+                      const Shadow(
+                        color: Colors.black,
+                        blurRadius: 10,
+                        offset: Offset(0, 3),
+                      ),
+                    ]),
+                  ),
             titlePadding: const EdgeInsets.only(
               left: 10,
             ),
@@ -128,8 +142,7 @@ class HomeScreen extends StatelessWidget {
                                     padding: const EdgeInsets.all(8.0),
                                     child: SizedBox(
                                         width:
-                                            MediaQuery.of(context).size.width *
-                                                0.2,
+                                            MediaQuery.of(context).size.width,
                                         child: const AboutWidget()),
                                   ),
                                 ],

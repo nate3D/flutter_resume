@@ -10,6 +10,7 @@ class EmploymentListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
       itemCount: employmentHistoryList.length,
       itemBuilder: (BuildContext context, int index) {
