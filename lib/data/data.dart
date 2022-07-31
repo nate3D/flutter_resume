@@ -50,7 +50,7 @@ List<Technology> techList = [
 
 List<Employment> employmentHistoryList = [
   Employment(
-      companyName: "TheSeam",
+      companyName: "The Seam",
       positionTitle: "Senior Solutions Architect",
       startDate: "May 2021",
       endDate: "Present",

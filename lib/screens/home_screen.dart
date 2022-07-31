@@ -68,9 +68,13 @@ class HomeScreen extends StatelessWidget {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      CircleAvatar(
-                          radius: 90,
-                          backgroundImage: Image.asset(imagePath).image),
+                      screenSize.width > 1200
+                          ? CircleAvatar(
+                              radius: 90,
+                              backgroundImage: Image.asset(imagePath).image)
+                          : CircleAvatar(
+                              radius: 60,
+                              backgroundImage: Image.asset(imagePath).image),
                     ],
                   ),
                 ]),
