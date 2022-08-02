@@ -14,23 +14,12 @@ String resumeLink =
 //Contact Email
 String contactEmail = "nate@nate3d.com";
 
-String aboutWorkExperience = '''
-I solve business problems with technology.
-
-I've worked as a linux systems administrator, a full-stack java developer, a full-stack DotNet developer, a scrum master, and a senior solutions architect.
-I use this experience to take business problems and turn them into a product that is easy to use, easy to understand, and easy to maintain.
-''';
-
-String aboutMeSummary = ''' 
-''';
-
 String location = "Memphis, TN";
 String locationUrl = "goo.gl/maps/zCGGRwNXxpsZZBVg8";
 String phoneNumber = "901-310-5878";
 String linkedIn = "linkedin.com/in/nate-brandeburg";
 String website = "nate3d.com";
 String github = "github.com/nate3D";
-String email = contactEmail;
 
 List<Technology> techList = [
   Technology(imagePath: "assets/images/DOT-NET-6-1.jpg", name: ""),

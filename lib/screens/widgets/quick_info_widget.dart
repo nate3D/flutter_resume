@@ -97,7 +97,7 @@ class QuickInfoWidget extends StatelessWidget {
             onTap: () => launchEmail(),
             child: Wrap(
               children: [
-                Text(email),
+                Text(contactEmail),
                 const SizedBox(
                   width: 5,
                 ),
