@@ -8,8 +8,7 @@ String name = "Nate Brandeburg";
 String username = "Nate3D";
 
 //Link to resume on Google Drive
-String resumeLink =
-    "https://www.dropbox.com/s/cwunfn92a9qsyxk/Nate_Resume.pdf?dl=0";
+String resumeLink = "www.dropbox.com/s/cwunfn92a9qsyxk/Nate_Resume.pdf?dl=0";
 
 //Contact Email
 String contactEmail = "nate@nate3d.com";
