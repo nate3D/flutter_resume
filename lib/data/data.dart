@@ -38,10 +38,20 @@ List<Technology> techList = [
 
 List<Employment> employmentHistoryList = [
   Employment(
+      companyName: "Whisker",
+      positionTitle: "Software Systems Engineer",
+      startDate: "September 2022",
+      endDate: "Present",
+      achievements: [
+        "Over-the-air firmware update process refinement & coordination between firmware and cloud teams",
+        "Architecture refactoring to migrate to enterprise microservice architecture",
+        "More to come!",
+      ]),
+  Employment(
       companyName: "The Seam",
       positionTitle: "Senior Solutions Architect",
       startDate: "May 2021",
-      endDate: "Present",
+      endDate: "September 2022",
       achievements: [
         "Architected a reusable DotNet 6 solution using onion architecture design patterns with robust separation of concerns",
         "Lead the effort to implement GraphQL into .NET Core web server applications",
